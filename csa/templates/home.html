@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% if messages %}
+{% for message in messages %}
+<script>
+alert('{{message}}')
+</script>
+{% endfor %}
+{% endif %}
+
+<div class="container mt-3">
+<a href="{% url 'query' %}" style="text-decoration:none;"> <h1 class="main"> You can ask anything </h1> </a>
+</div>
+</div>    
+{% endblock body %}
